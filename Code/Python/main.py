@@ -135,7 +135,6 @@ def main ():
 
         print("What would you like to do?")
         action = input("Type your action or help to see a list of all actions: ").lower()
-        #print("\n")
         
         if (action == "roll"):
             roll(rollIntro)
@@ -144,15 +143,16 @@ def main ():
         elif (action == "help"):
             print("You have selected: help","\n")
             print("Here are the possible actions:","\n") 
-            #print("\n")
             print("Roll: Specify how many dice you're rolling and what type of dice you're rolling to receive results","\n")
             print("Help: Recieve a list of all commands","\n")
             print("Exit: Quit the session","\n")
-            #print("\n")
         
         elif (action == "exit"):
             print("Thank you for playing!")
             isPlaying = False
+        
+        else:
+            print("Please input a valid command or type help to view the valid commands")
             
     return 0  
 
