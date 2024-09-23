@@ -58,7 +58,7 @@ def roll(rollIntro):
             print("You rolled a:", value, "\n")
             rolling = False
         
-        elif 1 < dNum < 100:
+        elif 1 < dNum <= 100:
             rollX(dNum, dType)
             rolling = False
         
